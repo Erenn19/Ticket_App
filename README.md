@@ -3,12 +3,11 @@ The application I made, https://symu.co/freebies/mobile-apps/ticketapp-figma-and
 
 # Technologies
 
-React Native (JAVASCRİPT)
-Figma
-Styled-Components
+*React Native (JAVASCRİPT)
+*Figma
+*Styled-Components
 
 # View_of_the_Application
-
 
 https://github.com/Erenn19/Ticket_App/assets/79603569/48c65f7e-4238-47d0-8b94-180580bf3b4c
 
