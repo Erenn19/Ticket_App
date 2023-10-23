@@ -3,8 +3,8 @@ The application I made, https://symu.co/freebies/mobile-apps/ticketapp-figma-and
 
 # Technologies
 
-*React Native (JAVASCRİPT)
-*Figma
+*React Native (JAVASCRİPT) <br />
+*Figma <br />
 *Styled-Components
 
 # View_of_the_Application
