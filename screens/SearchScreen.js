@@ -11,8 +11,8 @@ import { Feather } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
-import ProjectEvents from '../components/projectEvents';
-import ProjectButton from '../components/projectButton';
+import ProjectButton from '../components/ProjectButton';
+import ProjectEvent from '../components/ProjectEvent';
 const mapStyle = [
     {
         "elementType": "labels.icon",
@@ -164,7 +164,7 @@ const SearchScreen = ({ navigation }) => {
                                 <Feather style={{ marginLeft: 145 }} name="music" size={17} color="gray" /><Text style={{ marginLeft: 170, marginTop: -18, color: 'gray' }}>Indie Rock <Fontisto name="ticket" size={10} color="gray" /> €40-€90</Text>
                             </View>
                         </TouchableOpacity>
-                        <ProjectEvents />
+                        <ProjectEvent />
                         <View style={{ marginTop: -780, marginTop: -750 }}>
                             <Text style={{ marginLeft: 10, fontWeight: 'bold', fontSize: 25 }}>Places</Text>
                             <View style={{ backgroundColor: '#BDC0C4', marginTop: 20, width: 145, height: 90, borderRadius: 20, marginLeft: 2 }}></View>

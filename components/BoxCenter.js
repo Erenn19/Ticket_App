@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Box from "./box";
+import Box from "./Box";
 
 const BoxCenter = styled(Box);
 BoxCenter.defaultProps = {

@@ -1,13 +1,13 @@
 import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import { Feather } from '@expo/vector-icons';
 import React from 'react'
-import Box from '../components/box';
+import Box from '../components/Box';
 import { EvilIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-import TouchableText from '../components/touchableText';
-import VarsawBar from '../components/varsaw';
+import TouchableText from '../components/TouchableText';
+import VarsawBar from '../components/Varsaw';
 const HomeScreen = () => {
     return (
         <ScrollView alwaysBounceHorizontal={false} directionalLockEnabled={false}  >
@@ -39,6 +39,7 @@ const HomeScreen = () => {
                             </View>
                         </View>
                     </TouchableOpacity>
+                    {/* <iconButton iconElement={EvilIcons} icon={<EvilIcons name="location" size={30} color="#FC1055" />} /> */}
                     <TouchableOpacity>
                         <View style={{ flexDirection: 'row', backgroundColor: '#90e0ef', alignItems: 'center', justifyContent: 'center', borderRadius: 100, width: 135, height: 56 }}>
                             <View style={{ flexDirection: 'row' }}>
@@ -49,6 +50,7 @@ const HomeScreen = () => {
                             </View>
                         </View>
                     </TouchableOpacity>
+
                     <TouchableOpacity>
                         <View style={{ flexDirection: 'row', backgroundColor: '#ffbe0b', alignItems: 'center', justifyContent: 'center', borderRadius: 100, width: 135, height: 56 }}>
                             <View style={{ flexDirection: 'row' }}>

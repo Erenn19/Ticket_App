@@ -1,9 +1,9 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
-import Button from './button';
+import Button from './Button';
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
-import Box from './box';
+import Box from './Box';
 function TabBar({ state, descriptors, navigation }) {
     return (
         <View style={{ flexDirection: 'row' }}>

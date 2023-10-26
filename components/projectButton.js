@@ -9,6 +9,6 @@ const ProjectButton = (props) => {
     )
 }
 
-export default ProjectButton
+export default ProjectButton;
 
 const styles = StyleSheet.create({})

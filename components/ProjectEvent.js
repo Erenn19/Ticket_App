@@ -4,7 +4,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
 
 
-const ProjectEvents = () => {
+const ProjectEvent = () => {
     return (
         <View style={{ height: 950, marginTop: -800 }}>
             <View style={{ backgroundColor: '#BDC0C4', marginTop: 20, width: 145, height: 90, borderRadius: 20, marginLeft: 2 }}></View>
@@ -21,6 +21,6 @@ const ProjectEvents = () => {
     )
 }
 
-export default ProjectEvents
+export default ProjectEvent
 
 const styles = StyleSheet.create({})

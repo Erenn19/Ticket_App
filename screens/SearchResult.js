@@ -3,7 +3,6 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
-
 const SearchResult = ({ navigation }) => {
 
     return (
