@@ -3,6 +3,7 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import TicketStyle from '../styles/TicketStyle';
+
 const TicketScreen = () => {
     return (
         <View style={TicketStyle.container}>

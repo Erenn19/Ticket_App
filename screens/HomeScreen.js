@@ -8,79 +8,80 @@ import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import TouchableText from '../components/TouchableText';
 import VarsawBar from '../components/Varsaw';
+import HomeScreenStyle from '../styles/HomeScreenStyle';
 const HomeScreen = () => {
     return (
         <ScrollView alwaysBounceHorizontal={false} directionalLockEnabled={false}  >
-            <View style={{ flex: 1, justifyContent: 'center', backgroundColor: 'white', width: '100%', height: '100%' }}>
-                <Text style={{ fontWeight: 'bold', fontSize: '28', color: '#373A42', textAlign: 'left', paddingLeft: 20 }}>For You                                      <Feather style={{ textAlign: 'right', paddingRight: 50 }} name="sliders" size={24} color="#FC1055" />
+            <View style={HomeScreenStyle.homeScreenContainer}>
+                <Text style={HomeScreenStyle.forYouStyle}>For You                                      <Feather style={HomeScreenStyle.slidersIcon} name="sliders" size={24} color="#FC1055" />
                 </Text>
                 <ScrollView horizontal={true}>
-                    <Box style={{ flexDirection: 'row' }}>
+                    <Box style={HomeScreenStyle.boxContainer}>
                         <Image source={require('../images/musicFestival2.png')} />
-                        <Image style={{ marginLeft: -32 }} source={require('../images/musicFestival.png')} />
+                        <Image style={HomeScreenStyle.boxImg} source={require('../images/musicFestival.png')} />
                     </Box>
                 </ScrollView>
-                <Text style={{ fontWeight: 'bold', fontSize: '28', color: '#373A42', textAlign: 'left', paddingLeft: 20 }}>Collections</Text>
+                <Text style={HomeScreenStyle.collectionsStyle}>Collections</Text>
                 <ScrollView horizontal={true}>
-                    <Box style={{ flexDirection: 'row' }}>
+                    <Box style={HomeScreenStyle.boxContainer}>
                         <Image source={require('../images/Recommended.jpg')} />
-                        <Image style={{ marginLeft: -37 }} source={require('../images/Recommended2.png')} />
+                        <Image style={HomeScreenStyle.recommendedImg} source={require('../images/Recommended2.png')} />
                     </Box>
                 </ScrollView>
-                <Text style={{ fontWeight: 'bold', fontSize: '28', color: '#373A42', textAlign: 'left', paddingLeft: 20 }}>Discover</Text>
-                <Box style={{ flexDirection: 'row', padding: 10 }}>
+                <Text style={HomeScreenStyle.discoverText}>Discover</Text>
+                <Box style={HomeScreenStyle.boxTouchable}>
                     <TouchableOpacity>
-                        <View style={{ backgroundColor: '#ff8fa3', alignItems: 'center', justifyContent: 'center', borderRadius: 100, width: 135, height: 56 }}>
-                            <View style={{ flexDirection: 'row' }}>
-                                <View style={{ backgroundColor: '#ffcad4', borderRadius: 10, height: 30, width: 33, padding: 2 }}>
+                        <View style={HomeScreenStyle.locationIconContainer}>
+                            <View style={HomeScreenStyle.viewContainer}>
+                                <View style={HomeScreenStyle.locationIcon}>
                                     <EvilIcons name="location" size={30} color="#FC1055" />
                                 </View>
-                                <Text style={{ color: '#FC1055', textAlign: 'center', flexDirection: 'column', alignItems: 'center', padding: 5 }}>YOUR AREA</Text>
+                                <Text style={HomeScreenStyle.ıconText}>YOUR AREA</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
                     {/* <iconButton iconElement={EvilIcons} icon={<EvilIcons name="location" size={30} color="#FC1055" />} /> */}
                     <TouchableOpacity>
-                        <View style={{ flexDirection: 'row', backgroundColor: '#90e0ef', alignItems: 'center', justifyContent: 'center', borderRadius: 100, width: 135, height: 56 }}>
-                            <View style={{ flexDirection: 'row' }}>
-                                <View style={{ backgroundColor: '#a2d2ff', borderRadius: 10, height: 30, width: 33, padding: 2 }}>
-                                    <Feather style={{ alignItems: 'center', justifyContent: 'center', textAlign: 'center' }} name="music" size={20} color="#5798FF" />
+                        <View style={HomeScreenStyle.locationMusicContainer}>
+                            <View style={HomeScreenStyle.viewContainer}>
+                                <View style={HomeScreenStyle.musicContainer}>
+                                    <Feather style={HomeScreenStyle.musicStyle} name="music" size={20} color="#5798FF" />
                                 </View>
-                                <Text style={{ color: '#5798FF', textAlign: 'center', flexDirection: 'column', alignItems: 'center', padding: 5 }}>Music</Text>
+                                <Text style={HomeScreenStyle.musicText}>Music</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
 
                     <TouchableOpacity>
-                        <View style={{ flexDirection: 'row', backgroundColor: '#ffbe0b', alignItems: 'center', justifyContent: 'center', borderRadius: 100, width: 135, height: 56 }}>
-                            <View style={{ flexDirection: 'row' }}>
-                                <View style={{ backgroundColor: '#f4a261', borderRadius: 10, height: 30, width: 33, padding: 2 }}>
+                        <View style={HomeScreenStyle.sportsContainer}>
+                            <View style={HomeScreenStyle.viewContainer}>
+                                <View style={HomeScreenStyle.sportsIcon}>
                                     <MaterialIcons name="sports-tennis" size={24} color="yellow" />
                                 </View>
-                                <Text style={{ color: 'yellow', textAlign: 'center', flexDirection: 'column', alignItems: 'center', padding: 5 }}>Sports</Text>
+                                <Text style={HomeScreenStyle.sportsText}>Sports</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
                 </Box>
                 <VarsawBar />
-                <Text style={{ fontSize: 15, color: '#FC1055', marginTop: 30, marginLeft: 15 }}>SEP</Text>
-                <Text style={{ width: 45, height: 60, marginTop: 15, marginLeft: 3, fontWeight: 'bold', fontSize: 20, color: '#222834', textAlign: 'center', fontStyle: 'normal', fontWeight: 600 }}>12           <Text style={{ fontWeight: 'normal', fontSize: 10, color: '#C1C1C1' }}>THU</Text></Text>
-                <View style={{ alignItems: 'center', borderRadius: 20, marginRight: 200 }}>
-                    <Image style={{ marginRight: -280, marginTop: -100 }} source={require('../images/Recommended.jpg')} />
+                <Text style={HomeScreenStyle.sepText}>SEP</Text>
+                <Text style={HomeScreenStyle.dayStyle}>12           <Text style={HomeScreenStyle.thuText}>THU</Text></Text>
+                <View style={HomeScreenStyle.recommendedImgContainer}>
+                    <Image style={HomeScreenStyle.ımgStyle} source={require('../images/Recommended.jpg')} />
                 </View>
-                <View style={{ borderRadius: 10, width: 330, backgroundColor: '#cccccc', height: 40, marginLeft: 70, textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
+                <View style={HomeScreenStyle.eventsButtonStyle}>
                     <TouchableText text='3 EVENTS MORE' />
-                    <View style={{ marginLeft: 280, marginTop: -20 }}>
+                    <View style={HomeScreenStyle.rightIconContainer}>
                         <AntDesign name="right" size={15} color="white" />
                     </View>
                 </View>
-                <Text style={{ width: 45, height: 60, marginTop: 15, marginLeft: 3, fontWeight: 'bold', fontSize: 20, color: '#222834', textAlign: 'center', fontStyle: 'normal', fontWeight: 600 }}>13           <Text style={{ fontWeight: 'normal', fontSize: 10, color: '#C1C1C1' }}>FRI</Text> </Text>
-                <View style={{ alignItems: 'center', borderRadius: 20, marginTop: 40, marginRight: 200 }}>
-                    <Image style={{ marginRight: -280, marginTop: -100, width: 370, marginRight: -250 }} source={require('../images/musicFestival3.png')} />
+                <Text style={HomeScreenStyle.dayStyle}>13           <Text style={HomeScreenStyle.thuText}>FRI</Text> </Text>
+                <View style={HomeScreenStyle.musicFestivalImg}>
+                    <Image style={HomeScreenStyle.ımageStyle} source={require('../images/musicFestival3.png')} />
                 </View>
-                <View style={{ borderRadius: 10, width: 330, backgroundColor: '#cccccc', height: 40, marginLeft: 70, textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
+                <View style={HomeScreenStyle.eventsButtonStyle}>
                     <TouchableText text='6 EVENTS MORE' />
-                    <View style={{ marginLeft: 280, marginTop: -20 }}>
+                    <View style={HomeScreenStyle.rightIconContainer}>
                         <AntDesign name="right" size={15} color="white" />
                     </View>
                 </View>
