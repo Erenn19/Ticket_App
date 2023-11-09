@@ -17,15 +17,15 @@ const HomeScreen = () => {
                 </Text>
                 <ScrollView horizontal={true}>
                     <Box style={HomeScreenStyle.boxContainer}>
-                        <Image source={require('../images/musicFestival2.png')} />
-                        <Image style={HomeScreenStyle.boxImg} source={require('../images/musicFestival.png')} />
+                        <Image source={require('../../images/musicFestival2.png')} />
+                        <Image style={HomeScreenStyle.boxImg} source={require('../../images/musicFestival.png')} />
                     </Box>
                 </ScrollView>
                 <Text style={HomeScreenStyle.collectionsStyle}>Collections</Text>
                 <ScrollView horizontal={true}>
                     <Box style={HomeScreenStyle.boxContainer}>
-                        <Image source={require('../images/Recommended.jpg')} />
-                        <Image style={HomeScreenStyle.recommendedImg} source={require('../images/Recommended2.png')} />
+                        <Image source={require('../../images/Recommended.jpg')} />
+                        <Image style={HomeScreenStyle.recommendedImg} source={require('../../images/Recommended2.png')} />
                     </Box>
                 </ScrollView>
                 <Text style={HomeScreenStyle.discoverText}>Discover</Text>
@@ -67,7 +67,7 @@ const HomeScreen = () => {
                 <Text style={HomeScreenStyle.sepText}>SEP</Text>
                 <Text style={HomeScreenStyle.dayStyle}>12           <Text style={HomeScreenStyle.thuText}>THU</Text></Text>
                 <View style={HomeScreenStyle.recommendedImgContainer}>
-                    <Image style={HomeScreenStyle.ımgStyle} source={require('../images/Recommended.jpg')} />
+                    <Image style={HomeScreenStyle.ımgStyle} source={require('../../images/Recommended.jpg')} />
                 </View>
                 <View style={HomeScreenStyle.eventsButtonStyle}>
                     <TouchableText text='3 EVENTS MORE' />
@@ -77,7 +77,7 @@ const HomeScreen = () => {
                 </View>
                 <Text style={HomeScreenStyle.dayStyle}>13           <Text style={HomeScreenStyle.thuText}>FRI</Text> </Text>
                 <View style={HomeScreenStyle.musicFestivalImg}>
-                    <Image style={HomeScreenStyle.ımageStyle} source={require('../images/musicFestival3.png')} />
+                    <Image style={HomeScreenStyle.ımageStyle} source={require('../../images/musicFestival3.png')} />
                 </View>
                 <View style={HomeScreenStyle.eventsButtonStyle}>
                     <TouchableText text='6 EVENTS MORE' />

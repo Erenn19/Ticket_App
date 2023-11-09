@@ -4,12 +4,13 @@ import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import Sresult from '../styles/Sresult';
+
 const SearchResult = ({ navigation }) => {
 
     return (
         <View style={Sresult.container}>
             <View style={Sresult.ımageContainer}>
-                <Image style={Sresult.ımage} source={require('../images/Photo.png')} />
+                <Image style={Sresult.ımage} source={require('../../images/Photo.png')} />
             </View>
             <View style={Sresult.textContainer}>
                 <Text style={Sresult.mainText}>Brightlight Festival</Text>

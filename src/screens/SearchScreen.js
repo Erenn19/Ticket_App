@@ -35,7 +35,7 @@ const SearchScreen = ({ navigation }) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,
             },
-            image: require('../images/Music.png'),
+            image: require('../../images/Music.png'),
             title: 'Music'
         },
         {
@@ -46,7 +46,7 @@ const SearchScreen = ({ navigation }) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421
             },
-            image: require('../images/Sports.png'),
+            image: require('../../images/Sports.png'),
             title: 'Sports'
         },
         {
@@ -57,7 +57,7 @@ const SearchScreen = ({ navigation }) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421
             },
-            image: require('../images/Sports.png'),
+            image: require('../../images/Sports.png'),
             title: 'Sports'
         },
         {
@@ -68,7 +68,7 @@ const SearchScreen = ({ navigation }) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421
             },
-            image: require('../images/Music.png'),
+            image: require('../../images/Music.png'),
             title: 'Music'
         },
         {
@@ -79,7 +79,7 @@ const SearchScreen = ({ navigation }) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,
             },
-            image: require('../images/Music.png'),
+            image: require('../../images/Music.png'),
             title: 'Music'
         },
         {
@@ -90,7 +90,7 @@ const SearchScreen = ({ navigation }) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421
             },
-            image: require('../images/Music.png'),
+            image: require('../../images/Music.png'),
             title: 'Music'
         },
     ])
@@ -147,7 +147,7 @@ const SearchScreen = ({ navigation }) => {
                         <TouchableOpacity onPress={() => navigation.navigate('SearchResult')}>
                             <View style={SscreenStyle.eventsContainer}>
                                 <Text style={SscreenStyle.titleStyle}>EVENTS</Text>
-                                <Image style={SscreenStyle.musicFestivalImage} source={require('../images/musicFestival2.png')} />
+                                <Image style={SscreenStyle.musicFestivalImage} source={require('../../images/musicFestival2.png')} />
                                 <Text style={SscreenStyle.ımageHistoryText}>Daboi Concer… FRIDAY AUG 24, 9PM</Text>
                                 <Text style={SscreenStyle.ımageSubText}>Brightlight Music Festival</Text>
                                 <Feather style={SscreenStyle.musicIconStyle} name="music" size={17} color="gray" /><Text style={SscreenStyle.textTitle}>Indie Rock <Fontisto name="ticket" size={10} color="gray" /> €40-€90</Text>
@@ -172,12 +172,12 @@ const SearchScreen = ({ navigation }) => {
                                 />
                             </View>
                             <Text style={SscreenStyle.placesText}>Performers</Text>
-                            <Image style={SscreenStyle.jazzLogoImg} source={require('../images/Jazz_logo.png')} />
+                            <Image style={SscreenStyle.jazzLogoImg} source={require('../../images/Jazz_logo.png')} />
                             <Text style={SscreenStyle.drumpfetsText}>Drumpfets</Text>
                             <Text style={SscreenStyle.ımageSubText}><Ionicons name="ios-musical-notes" size={14} color="gray" /> Jazz</Text>
                             <Text style={SscreenStyle.jazzSubText}>No Next Event</Text>
 
-                            <Image style={SscreenStyle.musicFestival2Image} source={require('../images/musicFestival2.png')} />
+                            <Image style={SscreenStyle.musicFestival2Image} source={require('../../images/musicFestival2.png')} />
                             <Text style={SscreenStyle.sawBirdsText}>Sawbirds</Text>
                             <Text style={SscreenStyle.ımageSubText}><Ionicons name="ios-musical-notes" size={14} color="gray" /> Indie Rock</Text>
                             <Text style={SscreenStyle.ındieRockSub}>Next event Friday Aug 25, 10PM</Text>

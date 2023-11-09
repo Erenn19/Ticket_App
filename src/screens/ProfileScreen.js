@@ -9,7 +9,7 @@ const ProfileScreen = () => {
         <View style={ProfileStyle.profileContainer}>
             <View>
                 <View style={ProfileStyle.ımageContainer}>
-                    <Image style={ProfileStyle.ımageStyle} source={require('../images/Tickets.png')} />
+                    <Image style={ProfileStyle.ımageStyle} source={require('../../images/Tickets.png')} />
                 </View>
                 <View style={ProfileStyle.ticketContainer}>
                     <Text style={ProfileStyle.ticketStyle}>Tickets</Text>
