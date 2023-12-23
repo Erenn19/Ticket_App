@@ -13,7 +13,7 @@ import { Fontisto } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import ProjectButton from '../components/ProjectButton';
 import ProjectEvent from '../components/ProjectEvent';
-import SscreenStyle from '../styles/SscreenStyle';
+import SscreenStyle, { SscreenStyleContainer } from '../styles/SscreenStyle';
 
 const mapStyle = [
     {
@@ -106,24 +106,24 @@ const SearchScreen = ({ navigation }) => {
     }, [selectedEvent]);
 
     return (
-        <View style={SscreenStyle.container} >
+        <View className={SscreenStyleContainer.container} >
             <TextInput
-                style={SscreenStyle.ınputStyle}
+                className={SscreenStyleContainer.ınputStyle}
             >
-                <AntDesign style={SscreenStyle.searchIconStyle} name="search1" size={20} color="#CACDD4" />   Event name, artist, place
+                <AntDesign className={SscreenStyleContainer.searchIconStyle} name="search1" size={20} color="#CACDD4" />   Event name, artist, place
             </TextInput>
-            <View style={SscreenStyle.projectButtonContainer} >
+            <View className={SscreenStyleContainer.projectButtonContainer} >
                 <ScrollView horizontal={true}>
-                    <View style={SscreenStyle.projectButtonStyle}>
+                    <View className={SscreenStyleContainer.projectButtonStyle}>
                         <ProjectButton title='€40-90' />
                         <ProjectButton title='When' />
                         <ProjectButton title='Category' />
                         <ProjectButton title='Location' />
                         <ProjectButton title='Current Location' />
                     </View>
-                    <View style={SscreenStyle.eraserContainer}>
-                        <FontAwesome5 style={SscreenStyle.ıconStyle} name="eraser" size={24} color="#4f6d7a" />
-                        <Entypo style={SscreenStyle.ıconStyle} name="direction" size={24} color="#4f6d7a" />
+                    <View className={SscreenStyleContainer.eraserContainer}>
+                        <FontAwesome5 className={SscreenStyleContainer.ıconStyle} name="eraser" size={24} color="#4f6d7a" />
+                        <Entypo className={SscreenStyleContainer.ıconStyle} name="direction" size={24} color="#4f6d7a" />
                     </View>
                 </ScrollView>
             </View>
@@ -146,7 +146,7 @@ const SearchScreen = ({ navigation }) => {
                     <ScrollView>
                         <TouchableOpacity onPress={() => navigation.navigate('SearchResult')}>
                             <View style={SscreenStyle.eventsContainer}>
-                                <Text style={SscreenStyle.titleStyle}>EVENTS</Text>
+                                <Text className={SscreenStyleContainer.titleStyle}>EVENTS</Text>
                                 <Image style={SscreenStyle.musicFestivalImage} source={require('../../images/musicFestival2.png')} />
                                 <Text style={SscreenStyle.ımageHistoryText}>Daboi Concer… FRIDAY AUG 24, 9PM</Text>
                                 <Text style={SscreenStyle.ımageSubText}>Brightlight Music Festival</Text>
@@ -155,33 +155,33 @@ const SearchScreen = ({ navigation }) => {
                         </TouchableOpacity>
                         <ProjectEvent />
                         <View style={SscreenStyle.containerEvents}>
-                            <Text style={SscreenStyle.placesText}>Places</Text>
-                            <View style={SscreenStyle.emptyView}></View>
+                            <Text className={SscreenStyleContainer.placesText}>Places</Text>
+                            <View className={SscreenStyleContainer.emptyView}></View>
                             <Text style={SscreenStyle.locationText}>Lizbońska 4, Warsaw</Text>
-                            <Text style={SscreenStyle.locationSubText}>Daboi Concert Hall</Text>
+                            <Text className={SscreenStyleContainer.locationSubText}>Daboi Concert Hall</Text>
                             <Feather style={SscreenStyle.musicIcon} name="music" size={17} color="gray" /><Text style={SscreenStyle.textTitle}>Music</Text>
 
-                            <View style={SscreenStyle.emptyView}></View>
+                            <View className={SscreenStyleContainer.emptyView}></View>
                             <Text style={SscreenStyle.locationText2}>Zamieniecka 8, Warsaw</Text>
-                            <Text style={SscreenStyle.locationSubText}>Bright Lights Hall</Text>
+                            <Text className={SscreenStyleContainer.locationSubText}>Bright Lights Hall</Text>
                             <MaterialIcons style={SscreenStyle.musicIcon} name="sports-tennis" size={17} color="gray" /><Text style={SscreenStyle.gymnasticsText}>Gymnastics</Text>
-                            <View style={SscreenStyle.buttonContainer}>
+                            <View className={SscreenStyleContainer.buttonContainer}>
                                 <Button
                                     title="Show all 25 performers"
                                     color="#FC1055"
                                 />
                             </View>
-                            <Text style={SscreenStyle.placesText}>Performers</Text>
+                            <Text className={SscreenStyleContainer.placesText}>Performers</Text>
                             <Image style={SscreenStyle.jazzLogoImg} source={require('../../images/Jazz_logo.png')} />
                             <Text style={SscreenStyle.drumpfetsText}>Drumpfets</Text>
                             <Text style={SscreenStyle.ımageSubText}><Ionicons name="ios-musical-notes" size={14} color="gray" /> Jazz</Text>
                             <Text style={SscreenStyle.jazzSubText}>No Next Event</Text>
 
-                            <Image style={SscreenStyle.musicFestival2Image} source={require('../../images/musicFestival2.png')} />
+                            <Image className={SscreenStyleContainer.musicFestival2Image} source={require('../../images/musicFestival2.png')} />
                             <Text style={SscreenStyle.sawBirdsText}>Sawbirds</Text>
                             <Text style={SscreenStyle.ımageSubText}><Ionicons name="ios-musical-notes" size={14} color="gray" /> Indie Rock</Text>
                             <Text style={SscreenStyle.ındieRockSub}>Next event Friday Aug 25, 10PM</Text>
-                            <View style={SscreenStyle.buttonContainer}>
+                            <View className={SscreenStyleContainer.buttonContainer}>
                                 <Button
                                     title="Show all 25 performers"
                                     color="#FC1055"

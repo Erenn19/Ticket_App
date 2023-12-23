@@ -1,74 +1,10 @@
 import { StyleSheet } from 'react-native'
 
 const ProfileStyle = StyleSheet.create({
-    profileContainer: {
-        backgroundColor: 'white',
-        width: '100%',
-        height: '100%'
-    },
-    ımageContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    ımageStyle: {
-        marginTop: 300
-    },
-    ticketContainer: {
-        flexDirection: 'row'
-    },
-    ticketStyle: {
-        paddingTop: 310,
-        fontWeight: 'bold',
-        fontSize: 20,
-        paddingLeft: 22,
-        color: 'black'
-    },
-    priceText: {
-        paddingTop: 315,
-        fontWeight: 'bold',
-        fontSize: 15,
-        paddingLeft: 22,
-        paddingLeft: 200,
-        color: '#FC1055'
-    },
+
     antDesignStyle: {
-        paddingTop: 315,
+        paddingTop: 320,
         paddingLeft: 15
-    },
-    ticketIconContainer: {
-        paddingTop: 20,
-        paddingLeft: 22,
-        flexDirection: 'row'
-    },
-    entypoIconContainer: {
-        backgroundColor: '#FFD6E2',
-        borderRadius: 10,
-        width: 40,
-        height: 40,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    entypoIconContainer1: {
-        backgroundColor: '#D3FFF1',
-        borderRadius: 10,
-        width: 40,
-        height: 40,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    entypoIconContainer2: {
-        backgroundColor: '#E3F4FF',
-        borderRadius: 10,
-        width: 40,
-        height: 40,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    section: {
-        fontWeight: 'bold',
-        color: '#373A42',
-        paddingLeft: 10
     },
     priceStyle: {
         paddingLeft: 320,
@@ -76,26 +12,11 @@ const ProfileStyle = StyleSheet.create({
         fontWeight: 'bold',
         color: '#373A42'
     },
-    seatsStyle: {
-        paddingTop: 25,
-        paddingLeft: 10,
-        fontWeight: 'normal',
-        color: '#BDC0C4'
-    },
+
     perPersonStyle: {
         paddingLeft: 280,
         margin: -15,
         color: '#BDC0C4'
-    },
-    buttonContainer: {
-        height: 60,
-        backgroundColor: '#FC1055',
-        width: 200,
-        borderRadius: 10,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 120,
-        marginLeft: 200
     },
     priceContainer: {
         marginTop: -50,
@@ -105,12 +26,25 @@ const ProfileStyle = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    entypo: {
-        fontWeight: 'bold'
-    },
-    eBiletStyle: {
-        color: '#A6AAB1'
-    }
+
 
 })
+
+export class profileStyleContainer {
+    static profileContainer = "bg-white h-full	w-full"
+    static ımageContainer = "flex-1	justify-center items-center"
+    static ımageStyle = "mt-72"
+    static ticketContainer = "flex-row"
+    static ticketStyle = "font-bold	text-xl text-black pl-4 pt-80 ml-1"
+    static priceText = "font-bold pt-80  text-base	 pl-48 text-red-500"
+    static ticketIconContainer = "pt-5 pl-5 flex-row"
+    static entypoIconContainer = "rounded-xl w-10 h-10 justify-center items-center	bg-pink-200"
+    static entypoIconContainer1 = "rounded-xl w-10 h-10 justify-center items-center	bg-teal-200"
+    static entypoIconContainer2 = "rounded-xl w-10 h-10 justify-center items-center	bg-sky-200"
+    static section = "font-bold  text-black pl-3"
+    static seatsStyle = "pt-6 pl-3 font-bold  text-neutral-300"
+    static buttonContainer = "h-14	bg-rose-600 w-48 rounded-full justify-center items-center mt-32 ml-52"
+    static entypo = "font-bold"
+    static eBiletStyle = "text-neutral-400"
+}
 export default ProfileStyle

@@ -1,53 +1,6 @@
 import { StyleSheet } from 'react-native'
 
 const Sresult = StyleSheet.create({
-    container: {
-        backgroundColor: '#10181F',
-        width: '100%',
-        height: '100%'
-    },
-    ımageContainer: {
-        justifyContent: 'center'
-    },
-    ımage: {
-        width: '100%',
-        borderBottomLeftRadius: 40,
-        borderBottomRightRadius: 40,
-        marginBottom: 15
-    },
-    textContainer: {
-        backgroundColor: '#10181F'
-    },
-    mainText: {
-        fontSize: 37,
-        color: 'white',
-        fontWeight: 'bold'
-    },
-    ıconContainer: {
-        marginTop: 10
-    },
-    ıconText: {
-        backgroundColor: '#10181F',
-        color: 'white',
-        margin: 10
-    },
-    bottomContainer: {
-        backgroundColor: '#10181F',
-        marginTop: 80,
-        width: '100%',
-        height: '100%',
-        borderRadius: 10,
-        marginLeft: 40
-    },
-    priceStyle: {
-        fontWeight: 'bold',
-        color: 'white',
-        fontSize: 18
-    },
-    priceText: {
-        fontWeight: 'normal',
-        color: '#616368'
-    },
     buyTicketButton: {
         width: 150,
         height: 60,
@@ -57,15 +10,21 @@ const Sresult = StyleSheet.create({
         borderRadius: 20,
         justifyContent: 'center'
     },
-    buyTicketText: {
-        textAlign: 'center',
-        color: 'red',
-        fontWeight: 'bold',
-        fontSize: 15
-    },
-    
 })
 
+export class SresultContainer {
+    static container = "bg-sky-950	w-full h-full"
+    static ımageContainer = "justify-center	"
+    static ımage = "w-full rounded-b-3xl mb-5"
+    static textContainer = "bg-sky-950"
+    static mainText = "text-3xl	text-white	font-bold"
+    static ıconContainer = "mt-2"
+    static ıconText = "bg-sky-950 text-white m-3"
+    static bottomContainer = "bg-sky-950 mt-16	w-full h-full rounded-lg ml-10"
+    static priceStyle = "font-bold 	text-white text-base"
+    static priceText = "font-bold 	text-zinc-300"
+    static buyTicketText = "text-center	font-bold text-rose-600	text-base	"
+}
 
 
 export default Sresult

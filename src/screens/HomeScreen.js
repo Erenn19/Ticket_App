@@ -8,84 +8,87 @@ import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import TouchableText from '../components/TouchableText';
 import VarsawBar from '../components/Varsaw';
-import HomeScreenStyle from '../styles/HomeScreenStyle';
+import HomeScreenStyle, { HomeScreenStyle_, HomeScreenStylee, boxContainer, boxContainerClass, collectionsContainer, discoverContainer, forYouTextContainer, homeScreenContainer, imageContainer, musicContainer, musicIconClass, musicIconContainer, musicText, sepTextContainer, slidersIconContainer, sportsContainer, sportsIconContainer, sportsText, yourAreaContainer, yourAreaText, yourAreaView } from '../styles/HomeScreenStyle';
+
 const HomeScreen = () => {
+
     return (
         <ScrollView alwaysBounceHorizontal={false} directionalLockEnabled={false}  >
-            <View style={HomeScreenStyle.homeScreenContainer}>
-                <Text style={HomeScreenStyle.forYouStyle}>For You                                      <Feather style={HomeScreenStyle.slidersIcon} name="sliders" size={24} color="#FC1055" />
+            <View className={homeScreenContainer.homeScreen}>
+                <Text className={homeScreenContainer.forYouText}>For You                                   <Feather style={homeScreenContainer.slidersIcon} name="sliders" size={24} color="#FC1055" />
                 </Text>
                 <ScrollView horizontal={true}>
-                    <Box style={HomeScreenStyle.boxContainer}>
+                    <Box className={homeScreenContainer.box}>
                         <Image source={require('../../images/musicFestival2.png')} />
-                        <Image style={HomeScreenStyle.boxImg} source={require('../../images/musicFestival.png')} />
+                        <Image className={homeScreenContainer.image} source={require('../../images/musicFestival.png')} />
                     </Box>
                 </ScrollView>
-                <Text style={HomeScreenStyle.collectionsStyle}>Collections</Text>
+                <Text className={homeScreenContainer.collections}>Collections</Text>
                 <ScrollView horizontal={true}>
-                    <Box style={HomeScreenStyle.boxContainer}>
+                    <Box className={homeScreenContainer.box}>
                         <Image source={require('../../images/Recommended.jpg')} />
-                        <Image style={HomeScreenStyle.recommendedImg} source={require('../../images/Recommended2.png')} />
+                        <Image className={homeScreenContainer.image} source={require('../../images/Recommended2.png')} />
                     </Box>
                 </ScrollView>
-                <Text style={HomeScreenStyle.discoverText}>Discover</Text>
-                <Box style={HomeScreenStyle.boxTouchable}>
+                <Text className={homeScreenContainer.discover}>Discover</Text>
+                <Box className={homeScreenContainer.boxContainerC}>
                     <TouchableOpacity>
-                        <View style={HomeScreenStyle.locationIconContainer}>
-                            <View style={HomeScreenStyle.viewContainer}>
-                                <View style={HomeScreenStyle.locationIcon}>
+                        <View className={homeScreenContainer.yourArea}>
+                            <View className={homeScreenContainer.box}>
+                                <View className={homeScreenContainer.yourAreaView}>
                                     <EvilIcons name="location" size={30} color="#FC1055" />
                                 </View>
-                                <Text style={HomeScreenStyle.ıconText}>YOUR AREA</Text>
+                                <Text className={homeScreenContainer.yourAreaText}>YOUR AREA</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
                     {/* <iconButton iconElement={EvilIcons} icon={<EvilIcons name="location" size={30} color="#FC1055" />} /> */}
                     <TouchableOpacity>
-                        <View style={HomeScreenStyle.locationMusicContainer}>
-                            <View style={HomeScreenStyle.viewContainer}>
-                                <View style={HomeScreenStyle.musicContainer}>
-                                    <Feather style={HomeScreenStyle.musicStyle} name="music" size={20} color="#5798FF" />
+                        <View className={homeScreenContainer.musicContainer}>
+                            <View className={homeScreenContainer.box}>
+                                <View className={homeScreenContainer.musicIcon}>
+                                    <Feather className={homeScreenContainer.musicIconC} name="music" size={20} color="#5798FF" />
                                 </View>
-                                <Text style={HomeScreenStyle.musicText}>Music</Text>
+                                <Text className={homeScreenContainer.musicText}>Music</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
 
                     <TouchableOpacity>
-                        <View style={HomeScreenStyle.sportsContainer}>
-                            <View style={HomeScreenStyle.viewContainer}>
-                                <View style={HomeScreenStyle.sportsIcon}>
+                        <View className={homeScreenContainer.sportContainer}>
+                            <View className={homeScreenContainer.box}>
+                                <View className={homeScreenContainer.sportTennis}>
                                     <MaterialIcons name="sports-tennis" size={24} color="yellow" />
                                 </View>
-                                <Text style={HomeScreenStyle.sportsText}>Sports</Text>
+                                <Text className={homeScreenContainer.sportsText}>Sports</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
                 </Box>
                 <VarsawBar />
-                <Text style={HomeScreenStyle.sepText}>SEP</Text>
-                <Text style={HomeScreenStyle.dayStyle}>12           <Text style={HomeScreenStyle.thuText}>THU</Text></Text>
-                <View style={HomeScreenStyle.recommendedImgContainer}>
+                <Text className={homeScreenContainer.sepText}>SEP</Text>
+                <Text className={homeScreenContainer.dayStyle}>12           <Text className={homeScreenContainer.thuText}>THU</Text></Text>
+                <View className={homeScreenContainer.recommendedImgContainer}>
                     <Image style={HomeScreenStyle.ımgStyle} source={require('../../images/Recommended.jpg')} />
                 </View>
-                <View style={HomeScreenStyle.eventsButtonStyle}>
+                <View className={homeScreenContainer.eventsButtonStyle}>
                     <TouchableText text='3 EVENTS MORE' />
                     <View style={HomeScreenStyle.rightIconContainer}>
                         <AntDesign name="right" size={15} color="white" />
                     </View>
                 </View>
-                <Text style={HomeScreenStyle.dayStyle}>13           <Text style={HomeScreenStyle.thuText}>FRI</Text> </Text>
-                <View style={HomeScreenStyle.musicFestivalImg}>
+                <Text className={homeScreenContainer.dayStyle}>13           <Text className={homeScreenContainer.thuText}>FRI</Text> </Text>
+                <View className={homeScreenContainer.musicFestivalImg}>
                     <Image style={HomeScreenStyle.ımageStyle} source={require('../../images/musicFestival3.png')} />
                 </View>
-                <View style={HomeScreenStyle.eventsButtonStyle}>
+                <View className={homeScreenContainer.eventsButtonStyle}>
                     <TouchableText text='6 EVENTS MORE' />
                     <View style={HomeScreenStyle.rightIconContainer}>
                         <AntDesign name="right" size={15} color="white" />
                     </View>
                 </View>
             </View>
+
         </ScrollView >
     )
 }
